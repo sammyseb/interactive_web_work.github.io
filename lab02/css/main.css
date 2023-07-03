@@ -14,6 +14,7 @@
   text-decoration: none;
   font-size: 26px;
 }
+
 /* CSS for the video */
 .content iframe {
   display: block;
@@ -22,13 +23,11 @@
   height: auto;
 }
 
-
 /* Adjust the padding and font size for the content section */
 .content {
   padding: 20px;
   font-size: 18px;
 }
-
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -53,19 +52,6 @@
   font-size: 22px;
 }
 
-/* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
-  /* Hide all links, except for the selected tab */
-  .topnav a:not(.active) {
-    display: none;
-  }
-
-  /* Show the icon that should open and close the topnav */
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 /* Three columns side by side */
 .column {
   float: left;
@@ -90,13 +76,6 @@
 /* Some left and right padding inside the container */
 .container {
   padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .title {
@@ -124,21 +103,18 @@
 /* This media query sets the style for the unfolded topnav */
 /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
 @media screen and (max-width: 800px) {
-  .topnav.responsive {
-    position: relative;
+  /* Hide all links, except for the selected tab */
+  .topnav a:not(.active) {
+    display: none;
   }
 
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
+  /* Show the icon that should open and close the topnav */
+  .topnav a.icon {
+    float: right;
     display: block;
-    text-align: left;
   }
 }
+
+
 
 
